@@ -32,6 +32,8 @@ function renderCard(card) {
   cardsContainer.appendChild(div);
 }
 
+
+
 async function main() {
   data = await fetchCards();
   if (data) {
