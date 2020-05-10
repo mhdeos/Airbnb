@@ -3,21 +3,21 @@ const cardsContainer = document.querySelector("#cards");
 let data = [];
 
 async function fetchCards() {
-    let response = await fetch(apiUrl)
-    return await response.json()
+  let response = await fetch(apiUrl)
+  return await response.json()
 }
 
 function renderCards(cards) {
-    cardsContainer.innerHTML = "";
-    cards.map(renderCard);
+  cardsContainer.innerHTML = "";
+  cards.map(renderCard);
 }
 
 function renderCard(card) {
-    const div = document.createElement("div");
-    div.style.width = "20rem";
-    div.style.margin = "2rem";
-    div.className = "card";
-    div.innerHTML = `
+  const div = document.createElement("div");
+  div.style.width = "20rem";
+  div.style.margin = "2rem";
+  div.className = "card";
+  div.innerHTML = `
   <img src="${card.photo}" class="card-img-top" alt="${card.name}" />
   <div class="card-body">
     <h5 class="card-title">${card.name}</h5>
@@ -29,14 +29,14 @@ function renderCard(card) {
   </p>
   </div>
 `;
-    cardsContainer.appendChild(div);
+  cardsContainer.appendChild(div);
 }
 
 async function main() {
-    data = await fetchCards();
-    if (data) {
-        renderCards(data);
-    }
+  data = await fetchCards();
+  if (data) {
+    renderCards(data);
+  }
 }
 
 main();

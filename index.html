@@ -13,14 +13,51 @@
 
 
 <body class="container-fluid">
+    <nav class="navbar border-bottom fixed-top navbar-light">
+        <a class="navbar-brand">
+            <img src="./airbngama.png" width="45" height="45" alt="">
 
-    <nav class="navbar"></nav>
+    </nav>
+
+    <div id="div-row-search" class="row">
+        <div class="cardNav">
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-2">
+                            <label for="location-search">Localização</label>
+                            <input type="text" class="form-control" id="location-search"
+                                placeholder="Para onde você vai?">
+                            <div class="invalid-feedback">
+                                Selecione uma localização
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <label for="checkin">Check-in</label>
+                            <input type="date" class="form-control" id="checkin">
+                            <div class="invalid-feedback date-fields">
+                                Selecione uma data de checkin
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-2">
+                            <label for="checkout">Checkout</label>
+                            <input type="date" class="form-control" id="checkout">
+                            <div class="invalid-feedback date-fields">
+                                Selecione uma data de checkout
+                            </div>
+                        </div>
+                        <div class="col div-btn-search">
+                            <button type="submit" class="btn btn-outline-success"><i class="fas fa-search"></i>
+                                Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <div id="cards"></div>
-
-
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script> -->
 
     <script src="script.js"></script>
 </body>

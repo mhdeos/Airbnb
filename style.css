@@ -18,13 +18,76 @@
     height: 100%;
     font-size: 14px;
   }
-  
-  .container {
-    max-width: 1024px;
-    margin: 0 auto;
-  }
 
-  #cards{
+ #cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  } 
+  
+  .card{
+    border-color: #96c9a2;
+    border-width: 0.5px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
+  .card:hover{
+    border-width: 1px;
+    border-color: #28a745;
+    box-shadow: 6px 12px 24px 0 rgba(0, 0, 0, 0.4);
+
+  }
+
+  .card-body , .card-img-top{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+  }
+
+  .cardNav{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  }
+  
+
+  .navbar {
+    background-color: white;
+    height: 5.5rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+
+  
+  .btn-more-info:focus {
+    box-shadow: none;
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  #div-row-search {
+    margin: 7.5rem 1rem 2rem;
+    justify-content: center;
+  }
+  
+  .form-control.is-valid:focus,
+  .was-validated :valid.form-control {
+    border-color: #ced4da !important;
+    background-image: inherit !important;
+    box-shadow: inherit !important;
+  }
+  
+  #div-row-search .card {
+    width: 100%;
+  }
+  
+  .div-btn-search {
+    height: 2.5rem;
+    place-self: center;
+  }
+  
+  .div-btn-search button {
+    float: right;
+  }
+  
+
+  
+  
